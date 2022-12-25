@@ -38,7 +38,7 @@ backgroundMusic.volume = 0.25;
 init();
 
 async function init(){
-    await PIXI.Assets.load('/images/spritesheet.json', onAssetsLoaded);
+    await PIXI.Assets.load('../images/spritesheet.json', onAssetsLoaded);
 }
 function onAssetsLoaded () {
     
