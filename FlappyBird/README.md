@@ -10,3 +10,6 @@ Commands:
 1. git clone https://github.com/rajkumargadhavi/FlappyBird.git
 2. npm install
 3. http-server
+
+
+Live url: https://rajkumargadhavi.github.io/FlappyBird/
