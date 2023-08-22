@@ -31,7 +31,7 @@ stage.buttonMode = true;
 stage.on('mousedown', gameBegin);
 stage.on('tap', gameBegin);
 
-const backgroundMusic = PIXI.sound.Sound.from('../assets/audio/bgm.mp3');
+const backgroundMusic = PIXI.sound.Sound.from('/FlappyBird/assets/audio/bgm.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.25;
 
@@ -156,7 +156,7 @@ function animate() {
 			if(pipes[i].pipe.position.x == birdLeft){
 
 				PIXI.sound.Sound.from({
-					url: '../assets/audio/point.wav',
+					url: '/FlappyBird/assets/audio/point.wav',
 					autoPlay: true,
 				});
 				pass()
@@ -226,7 +226,7 @@ function reStart() {
 function hit(){
 	die = true;
 	PIXI.sound.Sound.from({
-		url: '../assets/audio/hit.wav',
+		url: '/FlappyBird/assets/audio/hit.wav',
 		autoPlay: true,
 	});
 }
