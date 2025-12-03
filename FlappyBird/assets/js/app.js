@@ -275,7 +275,7 @@ function addNewPile(){
 }
 function showDialog(){
 
-	backgroundMusic.stop();
+	// backgroundMusic.stop();
 
 	var storeHi = localStorage.getItem('ppbird_hiscore');
 	
