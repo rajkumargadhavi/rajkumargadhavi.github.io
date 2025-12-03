@@ -34,7 +34,7 @@ stage.on('tap', gameBegin);
 const backgroundMusic = PIXI.sound.Sound.from('/FlappyBird/assets/audio/bgm.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.25;
-
+backgroundMusic.play();
 init();
 
 async function init(){
@@ -91,8 +91,7 @@ function onAssetsLoaded () {
 }
 
 function gameBegin() {
-	if(!begin){
-		backgroundMusic.play();
+	if(!begin){		
 		begin = true;
 		assets.hand.visible = false;
 		assets.score.text = '0';
