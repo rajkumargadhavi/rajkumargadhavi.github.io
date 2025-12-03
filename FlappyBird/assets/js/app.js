@@ -101,11 +101,12 @@ function gameBegin() {
 }
 
 function animate() {
+	assets.fg.tilePosition.x -= groundSpeed;
 	if(stopAnimate){
 		return;
 	}
 	requestAnimationFrame(animate);
-	assets.fg.tilePosition.x -= groundSpeed;
+	
 	var bird = assets.bird;
 	if(begin){
 			bird.position.y -= bird.speedY;
